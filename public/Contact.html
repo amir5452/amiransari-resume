@@ -4,12 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffdf00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        p, a {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: center;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #ffdf00;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #ffdf00;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #ffdf00;
+            color: #1e3c72;
+            transform: scale(1.1);
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        /* Icons */
+        a::before, p::before {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        /* Add hover effect for the page load animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <h2>Email:</h2>
-        &#128231; 
-    <a href="mailto:example@example.com?subject=Subject%20Here&body=Body%20Text%20Here"><b>myemail@gmail.com</b></a>
-    <h2>Phone contact:</h2>
+    &#128231; 
+        <a href="mailto:example@example.com?subject=Subject%20Here&body=Body%20Text%20Here"><b>myemail@gmail.com</b></a>
+    <h2>Phone Contact:</h2>
     <p >&#128222; <b>+98 233 135 2823</b></p>
 
 </body>
