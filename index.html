@@ -3,57 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY Resume</title>
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffdf00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p, ul, ol, li, footer, address {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 0 15px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #ffdf00;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        ol, ul {
+            list-style-position: inside;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #ffdf00;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #ffdf00;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #ffdf00;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #ffdf00;
+            color: #1e3c72;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 2px solid #ffdf00;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Amir Ansari</h1>
-        <img src="./assets/images/my image.jpg" alt="" width="300">
-            <h2>Summary</h2>
-            <p>I am a Python programmer, full-stack developer, and an expert in cybersecurity and ethical hacking. Currently, I am pursuing a bachelor's degree in computer engineering at Yasuj University, Iran. I excel in team management and collaboration, making me an effective team player and leader.</p>
+    <img src="./assets/images/my image.jpg" alt="Amir Ansari" width="300">
+    <h2>Summary</h2>
+    <p>I am a Python programmer, full-stack developer, and an expert in cybersecurity and ethical hacking. Currently, I am pursuing a bachelor's degree in computer engineering at Yasuj University, Iran. I excel in team management and collaboration, making me an effective team player and leader.</p>
     
     <hr>
     <h2>My Education:</h2>
     <ol>
         <li>I have a mathematical-physics diploma. (2021-2024)</li>
-        <li>Corrently, I am a first-year computer engineering student looking forward to get my bachelor degree. (2024-2028)</li>
-
+        <li>Currently, I am a first-year computer engineering student looking forward to getting my bachelor's degree. (2024-2028)</li>
     </ol>
-    <h2>Work Exprience:</h2>
-        <ul>
-            <li>I've had the exprience of working as a mechanic for a couple of years.</li>
-            <li>I have also worked as a sales man in a shop and to some sense have also been an accountant for nearly two years.</li>
-        </ul>
+    <h2>Work Experience:</h2>
+    <ul>
+        <li>I've had the experience of working as a mechanic for a couple of years.</li>
+        <li>I have also worked as a salesman in a shop and to some extent have also been an accountant for nearly two years.</li>
+    </ul>
     <h2>Skills:</h2>
-        <ul>
-            <li>I am full stack web-developer</li>
-            <li>Microsoft applications expertise.</li>
-            <li>Cyber-security and ethical hacking.</li>
-            <li>HTML and CSS</li>
-            <li>Java Script</li>
-            <li>Python</li>
-        </ul>
+    <ul>
+        <li>I am a full-stack web developer.</li>
+        <li>Microsoft applications expertise.</li>
+        <li>Cybersecurity and ethical hacking.</li>
+        <li>HTML and CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
     <h2>Awards and Certifications:</h2>
-        <ul>
-            <li>Professional swimming certification</li>
-            <li>complete udemy and app brewery web-development certification.</li>
-            <li>complete udemy and app brewery python programming certification</li>
-            <li>Udemy best selling ethical-hacking cetification</li>
-        </ul>
+    <ul>
+        <li>Professional swimming certification</li>
+        <li>Completed Udemy and App Brewery web development certification</li>
+        <li>Completed Udemy and App Brewery Python programming certification</li>
+        <li>Udemy best-selling ethical hacking certification</li>
+    </ul>
     
     <hr>
     
-    <address>
+    <address style="text-align: center;">
         <a href="./public/Contact.html">Contact Me</a>
         <a href="./public/My_Hobbies.html">Hobbies</a>
- 
     </address>
     <hr>
     <footer>© 2024 Amir Ansari</footer>
-    
-
-
-
-
-
 </body>
 </html>
