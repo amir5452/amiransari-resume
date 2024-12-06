@@ -4,19 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffdf00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        ol {
+            list-style-position: inside;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        li {
+            margin: 15px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            border: 3px solid #ffdf00;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <h2>Hobbies:</h2>
-        <ol>
-            <li>GYM workout</li> 
-                <br>
-                <img src="../assets/images/GYM.jpeg" alt="GYM picture" width="100">
-            <li>Billiard</li>
-                <br>
-                <img src="../assets/images/billiard.jpeg" alt="image of billiard" width="100">
-            <li>swimming</li>
-                <br>
-                <img src="../assets/images/swimming.jpeg" alt="image of a man in swimming pull carrying a dumbell" width="100">
-        </ol>
+    <ol>
+        <li>GYM workout</li> 
+        <img src="../assets/images/GYM.jpeg" alt="GYM picture" width="200">
+        
+        <li>Billiard</li>
+        <img src="../assets/images/billiard.jpeg" alt="image of billiard" width="200">
+        
+        <li>Swimming</li>
+        <img src="../assets/images/swimming.jpeg" alt="image of a man in swimming pool carrying a dumbbell" width="200">
+    </ol>
 </body>
 </html>
